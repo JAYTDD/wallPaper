@@ -1,11 +1,11 @@
 <template>
 	<view class="common-title">
 		<view class="left">
-			1111
+			<slot name = "name"></slot>
 		</view>
 		
 		<view class="right">
-			222
+			<slot name = "custom"></slot>
 		</view>
 	</view>
 	
@@ -15,12 +15,14 @@
 	
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.common-title{
-		width: 690rpx;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding-left: 30rpx;
+		padding: 0 30rpx;
+		.left{
+			font-size: 40rpx;
+		}
 	}
 </style>

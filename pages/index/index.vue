@@ -1,5 +1,5 @@
 <template>
-	<view class="homelayout">	
+	<view class="homelayout pageBg">	
 		<view class="banner">
 			<swiper indicator-dots indicator-active-color= "rgba(255,255,255,0.5)"
 				autoplay circular>
@@ -25,7 +25,15 @@
 		</view>
 		
 		<view class="select">
-			<common-title>1111111</common-title>
+			<common-title>
+					<template #name> 每日推荐 </template>
+					<template #custom> 
+						<view class="date">
+							<uni-icons type="calendar" size="30"></uni-icons>
+							<uni-dateformat :date="Date.now()" format="dd"></uni-dateformat>
+						</view>
+					</template>
+			</common-title>
 			<view class="content">
 				<scroll-view scroll-x >
 					<view class="box" v-for="item in 7">
@@ -34,6 +42,20 @@
 				</scroll-view>
 			</view>
 		</view>
+		
+		<view class="theme">
+			<common-title>
+					<template #name> 专题精选 </template>
+					<template #custom> 
+						<navigator url="" class="more">More+</navigator>
+					</template>
+			</common-title>
+			<view class="content">
+				<theme-item v-for="item in 8"></theme-item>
+				<theme-item :isMore="true"></theme-item>
+			</view>
+		</view>
+		
 	</view>
 </template>
 
@@ -103,6 +125,11 @@
 		}
 		.select{
 			padding-top: 50rpx;
+			.date{
+				color: #28b389;
+				display: flex;
+				align-items: center;
+			}
 			.content{
 				width: 720rpx;
 				margin-top: 30rpx;
@@ -123,6 +150,21 @@
 						margin-right: 30rpx;
 					}
 				}
+			}
+		}
+		
+		.theme{
+			padding : 50rpx 0;
+			.more{
+				font-size: 32rpx;
+				color: #888;
+			}
+			.content{
+				margin: 0 30rpx;
+				margin-top:30rpx;
+				display: grid;
+				gap: 15rpx;
+				grid-template-columns: repeat(3,1fr);
 			}
 		}
 	}
