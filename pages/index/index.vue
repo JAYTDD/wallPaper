@@ -1,5 +1,6 @@
 <template>
 	<view class="homelayout pageBg">	
+		<custom-nav-bar></custom-nav-bar>
 		<view class="banner">
 			<swiper indicator-dots indicator-active-color= "rgba(255,255,255,0.5)"
 				autoplay circular>
@@ -36,7 +37,7 @@
 			</common-title>
 			<view class="content">
 				<scroll-view scroll-x >
-					<view class="box" v-for="item in 7">
+					<view class="box" v-for="item in 7">	
 						<image src="/common/wallpaper/preview2.jpg" mode=""></image>
 					</view>
 				</scroll-view>
@@ -47,7 +48,7 @@
 			<common-title>
 					<template #name> 专题精选 </template>
 					<template #custom> 
-						<navigator url="" class="more">More+</navigator>
+						<navigator url="/pages/preview/preview" class="more">More+</navigator>
 					</template>
 			</common-title>
 			<view class="content">
@@ -55,7 +56,6 @@
 				<theme-item :isMore="true"></theme-item>
 			</view>
 		</view>
-		
 	</view>
 </template>
 

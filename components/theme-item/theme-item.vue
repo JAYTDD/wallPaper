@@ -1,12 +1,12 @@
 <template>
 	<view class="themeItem">
-		<navigator url="" class="box" v-if="!isMore">
+		<navigator url="/pages/classfiy-list/classfiy-list" class="box" v-if="!isMore">
 			<image class="pic" src="/common/wallpaper/classify1.jpg" mode=""></image>
 			<view class="mask">明星美女</view>
 			<view class="tab">3天前更新</view>
 		</navigator>
 		
-		<navigator url="" class="box more" v-if="isMore">
+		<navigator url="/pages/classfiy/classfiy" open-type="reLaunch" class="box more" v-if="isMore">
 			<image class="pic" src="/common/wallpaper/classify1.jpg" mode=""></image>
 			<view class="mask">
 				<uni-icons type="more" size="34" color="#fff"></uni-icons>

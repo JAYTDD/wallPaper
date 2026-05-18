@@ -3,19 +3,38 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "主页",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
 			}
 		},
 		{
 			"path": "pages/classfiy/classfiy",
 			"style": {
-				"navigationBarTitleText": ""
+				"navigationBarTitleText": "分类",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
 			}
 		},
 		{
 			"path": "pages/user/user",
 			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"	
+			}
+		},
+		{
+			"path": "pages/classfiy-list/classfiy-list",
+			"style": {
 				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/preview/preview",
+			"style": {
+				"navigationBarTitleText": "预览",
+				"navigationStyle": "custom"
 			}
 		}
 	],
