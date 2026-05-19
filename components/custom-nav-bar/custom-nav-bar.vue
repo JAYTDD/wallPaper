@@ -29,6 +29,7 @@ defineProps({
 	}
 })
 
+
 </script>
 
 <style lang="scss" scoped>
@@ -39,7 +40,9 @@ defineProps({
 		left:0;
 		width: 100%;
 		z-index: 10;
-		background-color: pink;
+		background:
+		linear-gradient(to bottom,transparent,#fff 400rpx),
+		linear-gradient(to right,#beecd8 20%,#F4E2D8);
 		.statusBar{}
 		.titleBar{
 			display: flex;	
