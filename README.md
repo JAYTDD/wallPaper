@@ -294,11 +294,3 @@ function readImgsFun() {
 |------|------|------|----------|
 | ![首页](./common/design/home.jpg) | ![分类](./common/design/classify.jpg) | ![预览](./common/design/preview1.jpg) | ![用户中心](./common/design/self.jpg) |
 
-## 技术支持
-
-- B站：咸虾米
-- 邮箱：513894357@qq.com
-
-## 许可证
-
-本项目仅供学习交流使用，禁止商业用途。
